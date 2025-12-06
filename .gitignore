@@ -13,6 +13,7 @@ logs_feature/
 logs_parameter/
 logs_selection/
 checkpoints/
+figs/
 
 # Ignore specific .py files (custom)
 compare_models_timeseries.py
