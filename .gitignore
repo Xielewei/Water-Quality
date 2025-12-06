@@ -1,0 +1,22 @@
+# Ignore misplaced dataset files
+*.mat
+*.npy
+
+# Python cache
+__pycache__/
+*/__pycache__/
+*.pyc
+
+# Logs and checkpoints
+logs/
+logs_feature/
+logs_parameter/
+logs_selection/
+checkpoints/
+
+# Ignore specific .py files (custom)
+compare_models_timeseries.py
+plot_hyperparameters.py
+selection.py
+features.py
+hyperparameters.py
