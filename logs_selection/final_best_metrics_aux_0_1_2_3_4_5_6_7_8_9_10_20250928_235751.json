@@ -1,0 +1,31 @@
+{
+    "test_mae": 0.00774738471955061,
+    "test_mape": 1.166780013591051,
+    "test_rmse": 0.010959506034851074,
+    "aux_variables": [
+        "Specific conductance, water, unfiltered, microsiemens per centimeter at 25 degrees Celsius (Maximum)",
+        "pH, water, unfiltered, field, standard units (Maximum)",
+        "pH, water, unfiltered, field, standard units (Minimum)",
+        "Specific conductance, water, unfiltered, microsiemens per centimeter at 25 degrees Celsius (Minimum)",
+        "Specific conductance, water, unfiltered, microsiemens per centimeter at 25 degrees Celsius (Mean)",
+        "Dissolved oxygen, water, unfiltered, milligrams per liter (Maximum)",
+        "Dissolved oxygen, water, unfiltered, milligrams per liter (Mean)",
+        "Dissolved oxygen, water, unfiltered, milligrams per liter (Minimum)",
+        "Temperature, water, degrees Celsius (Mean)",
+        "Temperature, water, degrees Celsius (Minimum)",
+        "Temperature, water, degrees Celsius (Maximum)"
+    ],
+    "aux_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+    ]
+}
