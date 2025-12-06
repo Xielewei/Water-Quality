@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Water Quality Spatial‑Temporal Imputation Using Diffusion Graph Convolutional Networks
 
 This repository contains the core code accompanying the paper:
@@ -135,4 +134,3 @@ These summary statistics correspond to the model comparison results reported in 
 =======
 # Water-Quality
 This repository provides the data and partial code from the paper "Water Quality Spatial-Temporal Imputation of Missing Data Based on Diffusion Graph Convolutional Networks." If the paper is accepted, we will release the full source code.
->>>>>>> 77aed9c2f25e6d6ffecba52a9738a349a84d119f
