@@ -41,6 +41,8 @@ Tracked (to be uploaded to GitHub):
 - `utils.py` – Helpers to build models and loss functions from the config.
 - `main.py` – Script to train **AUX_DGCN** once (single run, single config).
 - `run_with_baseline.py` – Script to train **all models** defined by `config_*.yaml` for multiple runs and summarize their test performance.
+- `datasets/water_dataset.mat` – Daily water‑quality time series used in the case study (pH target and auxiliary indicators).
+- `datasets/adjacency_matrix.npy` – Spatial adjacency matrix between monitoring locations (river‑network graph).
 
 Untracked files and folders (e.g., raw data, logs, figures, analysis utilities) are *not* required for this code release and are therefore not documented here.
 
@@ -57,7 +59,8 @@ In the code, we assume:
 - `datasets/adjacency_matrix.npy` stores the spatial adjacency matrix between monitoring locations, constructed from the river network (e.g., thresholded Gaussian kernel on distances or group information).  
   A helper `generate_adjacency_matrix` is provided in `data/preprocess.py` for users who have grouping variables instead of a pre‑computed matrix.
 
-These data files are not committed to the repository; users should prepare them following the description in the manuscript.
+Both `datasets/water_dataset.mat` and `datasets/adjacency_matrix.npy` are included in this repository to support direct reproduction of the experiments.  
+If you wish to run the framework on your own data, you can replace these two files with datasets that follow the same structure.
 
 ## Models in This Release
 
@@ -86,14 +89,14 @@ conda activate water-quality-dgcn
 pip install torch numpy scipy matplotlib omegaconf einops
 ```
 
-### 2. Prepare Data
+### 2. Data (already included)
 
-Place the following files in a folder named `datasets/` at the repository root:
+The repository ships with a `datasets/` folder containing:
 
 - `water_dataset.mat`
 - `adjacency_matrix.npy`
 
-The internal variable names and dimensions should follow the conventions described in the paper and in `main.py` / `run_with_baseline.py`.
+If you replace them with your own data, make sure the internal variable names and dimensions follow the conventions described in the paper and in `main.py` / `run_with_baseline.py`.
 
 ### 3. Train the Proposed Model (Single Run)
 
