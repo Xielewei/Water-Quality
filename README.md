@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Water Quality Spatial‑Temporal Imputation Using Diffusion Graph Convolutional Networks
 
 This repository contains the core code accompanying the paper:
@@ -131,3 +132,7 @@ These summary statistics correspond to the model comparison results reported in 
   Keeping these values unchanged is important for matching the protocol described in the paper.
 - Training uses an early‑stopping strategy based on validation MAE and restores the best checkpoint before final test evaluation.
 - Subgraph sampling and masking are implemented in `data/preprocess.py` and used consistently in both training and testing through `Trainer.fit`.
+=======
+# Water-Quality
+This repository provides the data and partial code from the paper "Water Quality Spatial-Temporal Imputation of Missing Data Based on Diffusion Graph Convolutional Networks." If the paper is accepted, we will release the full source code.
+>>>>>>> 77aed9c2f25e6d6ffecba52a9738a349a84d119f
