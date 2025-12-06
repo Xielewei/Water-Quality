@@ -1,0 +1,46 @@
+# config_DGCN_LSTM.yaml
+
+seed: 42  # Global random seed to ensure reproducibility
+
+data:
+  unobserved_proportion: 0.2
+  h: 24
+  N_sub: 25
+  u: 1
+
+  # 🔽 Set sample sizes for each split
+  train_sample_size: 2000   
+  val_sample_size: 2000     
+  test_sample_size: 20000   
+
+model:
+  name: "DGCN_LSTM"
+  params:
+    input_dim: 24
+    output_dim: 24
+    aux_dim: 11
+    num_nodes: 25
+    lstm_hidden: 64
+    lstm_layers: 2
+    dropout: 0.0
+
+loss:
+  name: "L1Loss"
+  params:
+    reduction: "mean"   # Options: 'mean', 'sum', 'none'
+
+training:
+  epochs: 500
+  batch_size: 128
+  lr: 0.001
+  early_stopping_patience: 20
+  min_delta: 0.0001
+  lr_scheduler: true
+  patience_lr: 20
+  factor_lr: 0.5
+
+paths:
+  save_path: "./checkpoints/best_model_dgcn_lstm.pth"
+  log_dir: "./logs/dgcn_lstm"
+
+device: "cuda:0"
